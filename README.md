@@ -23,7 +23,7 @@ https://student-management-wyt7.onrender.com/students
 git clone <repository-url>
 cd student-management
 ```
-###3.2 Tạo file .env
+### 3.2 Tạo file .env
 
 Tạo file .env trong thư mục student-management với các biến môi trường sau:
 ```bash
@@ -39,7 +39,7 @@ SPRING_DATASOURCE_URL=jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POST
 SPRING_DATASOURCE_USERNAME=${POSTGRES_USER}
 SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD}
 ```
-###3.3 Chạy chương trình
+### 3.3 Chạy chương trình
 ```bash
 ./mvnw dependency:resolve
 ./mvnw spring-boot:run
@@ -47,15 +47,15 @@ SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD}
 Sau khi chạy thành công, truy cập:
 
 http://localhost:8080/students
-##4. Trả lời câu hỏi
-###4.1 Q1: Ràng buộc Khóa Chính (Primary Key)
+## 4. Trả lời câu hỏi
+### 4.1 Q1: Ràng buộc Khóa Chính (Primary Key)
 
 Khi cố tình insert một sinh viên có id trùng với bản ghi đã tồn tại, Database sẽ báo lỗi UNIQUE constraint failed.
 Lý do là cột khóa chính phải duy nhất để đảm bảo mỗi bản ghi được định danh không trùng lặp.
 Nếu cho phép trùng khóa chính, các thao tác cập nhật, xóa hoặc liên kết khóa ngoại sẽ không xác định
 được đúng bản ghi cần thao tác.
 
-###4.2 Q2: Toàn vẹn dữ liệu (Constraints)
+### 4.2 Q2: Toàn vẹn dữ liệu (Constraints)
 
 Khi insert một sinh viên nhưng để trống cột name (giá trị NULL), Database sẽ không báo lỗi
 nếu cột này không được khai báo NOT NULL.
@@ -70,7 +70,7 @@ Sai lệch logic nghiệp vụ của hệ thống
 
 Do đó cần khai báo ràng buộc dữ liệu phù hợp để đảm bảo toàn vẹn dữ liệu.
 
-###4.3 Q3: Cấu hình Hibernate
+### 4.3 Q3: Cấu hình Hibernate
 
 Việc dữ liệu trong Database bị mất mỗi khi tắt và chạy lại ứng dụng thường do cấu hình Hibernate sử dụng
 chế độ tự động tạo lại schema, ví dụ:
@@ -87,4 +87,4 @@ spring.jpa.hibernate.ddl-auto=update
 hoặc
 
 spring.jpa.hibernate.ddl-auto=validate
-5. Screenshot module
+## 5. Screenshot module
