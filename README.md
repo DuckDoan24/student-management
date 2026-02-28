@@ -88,3 +88,40 @@ hoặc
 
 spring.jpa.hibernate.ddl-auto=validate
 ## 5. Screenshot module
+### 5.1 Trang danh sách
+
+Trang danh sách:
+![Trang danh sách](img/HomePage.png)
+
+Tìm kiếm tên:                                                                      
+![Tìm kiếm tên](img/Search.png)
+
+### 5.2 Trang chi tiết
+
+Trang chi tiết:
+![Trang chi tiết](img/DetailPage.png)
+
+### 5.3 Chức năng sửa
+
+Chỉnh sửa thông tin sinh viên:
+![Chỉnh sửa thông tin sinh viên](img/ModifyPage.png)
+
+Kết quả sau chỉnh sửa:
+![Kết quả sau chỉnh sửa](img/AfterModify.png)
+
+### 5.4 Chức năng thêm
+
+Thêm sinh viên mới:
+![Thêm sinh viên mới](img/InsertPage.png)
+
+Kết quả sau thêm:
+![Kết quả sau thêm](img/AfterInsert.png)
+
+### 5.5 Chức năng xóa
+
+Xóa sinh viên:
+![Xóa sinh viên](img/Delete.png)
+
+Kết quả sau khi xóa:
+![Kết quả sau khi xóa](img/AfterDelete.png)
+
