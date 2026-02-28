@@ -14,11 +14,13 @@
 </head>
 <body>
     <h1>Danh Sách Sinh Viên (SSR)</h1>
-    <form action="/students" method="GET">
-        <input type="text" name="keyword" placeholder="Nhập tên" />
-        <button type="submit">Tìm</button>
-    </form>
-    <a href="/students/insert">Thêm mới</a>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <form action="/students" method="GET" class="d-flex">
+            <input type="text" name="keyword" placeholder="Nhập tên" th:value="${keyword}"/>
+            <button type="submit">Tìm</button>
+        </form>
+        <a href="/students/insert" class="btn btn-success">Thêm mới</a>
+    </div>
     <table>
         <thead>
             <tr>
